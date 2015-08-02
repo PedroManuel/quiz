@@ -1,3 +1,4 @@
+var models = require('../models/models.js');
 
 //GET /quizes
 exports.index=function(req,res){
