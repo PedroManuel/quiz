@@ -1,7 +1,7 @@
 var models = require('../models/models.js');
 
 //Autoload - factoriza el código si ruta incluye :quizId
-export.load=function(req, res, next, quizId){
+exports.load=function(req, res, next, quizId){
   models.Quiz.find(quizId).then(
     function(quiz){
       if (quiz){
