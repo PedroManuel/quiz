@@ -17,7 +17,7 @@
       <header class="main" id="h1">
         <%if (!session.user){%>
           <span class="right"><a href="/login">Login</a></span>
-        <%}else{%>
+        <%} else {%>
           <span class="right"><%=session.user.username%><a href="/logout">Logout</a></span>
         <%}%>
         <h2>Quiz: el juego de las preguntas</h2>
@@ -26,6 +26,7 @@
       <nav class="main" id="n1" role="navigation">
         <span><a href="/">Inicio</a></span>
         <span><a href="/quizes">Preguntas</a></span>
+
         <span><a href="/quizes/author">Autor</a></span>
       </nav>
 
